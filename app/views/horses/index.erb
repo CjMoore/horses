@@ -11,10 +11,10 @@
   </tr>
   <% @horses.each do |horse| %>
     <tr>
-      <td><%= horse.name %></td>
-      <td><%= horse.breed.name %></td>
-      <td><%= horse.total_winnings %></td>
-      <td><%= horse.jockey.name %></td>
+      <td id="name"><%= horse.name %></td>
+      <td class="breed"><%= horse.breed.name %></td>
+      <td class="winnings"><%= horse.total_winnings %></td>
+      <td class="jockey"><%= horse.jockey.name %></td>
       <td><a href="/horses/<%=horse.id %>">Additional Info</a></td>
       <td>
         <form action="/horses/<%= horse.id %>" method="post">
