@@ -9,5 +9,9 @@ group :development, :test do
   gem 'shotgun'
   gem 'minitest'
   gem 'tux'
+  gem 'rspec'
+  gem 'pry'
+  gem 'database_cleaner'
   gem 'capybara'
+  gem 'launchy'
 end
